@@ -7,7 +7,7 @@ Import the docsify-themeable defaults and this theme.
 ```html
 <link
   rel="stylesheet"
-  href="//unpkg.com/docsify-themeable@0/dist/css/theme-defaults.min.css"
+  href="//unpkg.com/docsify-themeable@0/dist/css/theme-defaults.css"
 />
 <link
   rel="stylesheet"
