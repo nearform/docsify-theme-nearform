@@ -1,0 +1,82 @@
+:root {
+  --theme-hue: 219;
+  --theme-saturation: 79%;
+  --theme-lightness: 51%;
+
+  --theme-blue: rgb(25, 76, 172);
+  --theme-orange: rgb(253, 119, 94);
+
+  --base-background-color: rgb(244, 244, 242);
+  --base-color: rgb(109, 109, 104);
+  --base-line-height: 1.6;
+  --base-font-size: 16px;
+  --base-font-family: 'archiaregular', 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --code-block-border-radius: 6px;
+  --code-theme-background: rgb(255, 255, 255);
+
+  --link-border-bottom: solid 1px var(--base-color);
+  --link-border-bottom--hover: solid 1px var(--theme-orange);
+  --link-text-decoration: none;
+  --link-text-decoration--hover: none;
+
+  --heading-color: var(--theme-blue);
+  --heading-font-weight: 300;
+  --heading-h1-font-size: 70px;
+  --heading-h1-font-weight: 100;
+  --heading-h2-font-size: 18px;
+
+  --search-input-background-color: rgb(255,255,255);
+  --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20px' width='20px' viewBox='0 0 24 24' fill='none' stroke='rgba(0, 0, 0, 0.3)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5' vector-effect='non-scaling-stroke'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E");
+  --search-input-background-position: 21px center;
+  --search-input-border-color: var(--sidebar-border-color);
+  --search-input-border-width: 1px 0;
+  --search-input-margin: 0;
+  --search-input-padding: 0.65em 1em 0.65em 50px;
+  --search-input-placeholder-color: rgba(0, 0, 0, 0.4);
+  --search-margin: 0;
+
+  --search-result-heading-color: rgb(255, 255, 255);
+  --search-result-heading-font-weight: 600;
+  --search-result-item-border-color: var(--theme-blue);
+  --search-result-item-padding: 1em;
+  --search-result-keyword-background: var(--base-background-color);
+  --search-result-keyword-color: var(--base-color);
+
+  --sidebar-background: var(--theme-color);
+  --sidebar-border-color: var(--mono-tint2);
+  --sidebar-name-background: rgb(255, 255, 255);
+  --sidebar-name-margin: 0;
+  --sidebar-name-padding: 1em 0;
+  --sidebar-nav-indent: 0;
+  --sidebar-nav-link-background-color--active: var(--theme-blue);
+  --sidebar-nav-link-background-color--hover: var(--theme-blue);
+  --sidebar-nav-link-text-decoration--active: none;
+  --sidebar-nav-link-text-decoration--hover: none;
+  --sidebar-nav-link-color: rgb(255, 255, 255);
+  --sidebar-nav-link-padding: 0.65em;
+  --sidebar-nav-pagelink-padding: 0.5em 2em;
+  --sidebar-padding: 0;
+  --sidebar-toggle-background: rgb(255, 255, 255);
+  --sidebar-toggle-border-radius: 0 3px 3px 0;
+}
+
+.sidebar {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar-toggle .sidebar-toggle-button {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+body.close .sidebar {
+  box-shadow: none;
+}
+
+.sidebar .search .matching-post {
+  color: rgb(255, 255, 255);
+}
+.sidebar .search .results-panel .empty {
+  color: rgb(255, 255, 255);
+}
+.app-sub-sidebar > li > a {
+  padding: 0.4em 1em 0.4em 3em !important;
+}

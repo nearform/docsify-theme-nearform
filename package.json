@@ -1,0 +1,22 @@
+{
+  "name": "@nearform/docsify-theme-nearform",
+  "version": "1.0.0",
+  "description": "A NearForm theme for docsify",
+  "main": "theme-nearform.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearform/docsify-theme-nearform.git"
+  },
+  "files": [
+    "theme-nearform.css"
+  ],
+  "author": "Joe Warren <joe.warren@nearform.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nearform/docsify-theme-nearform/issues"
+  },
+  "homepage": "https://github.com/nearform/docsify-theme-nearform#readme"
+}
