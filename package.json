@@ -5,8 +5,9 @@
   "main": "theme-nearform.css",
   "scripts": {
     "minify": "postcss theme-nearform.css > theme-nearform.min.css",
+    "release": "np",
     "prepublishOnly": "npm run minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/nearform/docsify-theme-nearform#readme",
   "devDependencies": {
     "cssnano": "^4.1.8",
+    "np": "^4.0.2",
     "postcss-cli": "^6.1.1"
   }
 }
