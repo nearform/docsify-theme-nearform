@@ -4,6 +4,8 @@
   "description": "A NearForm theme for docsify",
   "main": "theme-nearform.css",
   "scripts": {
+    "minify": "postcss theme-nearform.css > theme-nearform.min.css",
+    "prepublishOnly": "npm run minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +13,17 @@
     "url": "git+https://github.com/nearform/docsify-theme-nearform.git"
   },
   "files": [
-    "theme-nearform.css"
+    "theme-nearform.css",
+    "theme-nearform.min.css"
   ],
   "author": "Joe Warren <joe.warren@nearform.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nearform/docsify-theme-nearform/issues"
   },
-  "homepage": "https://github.com/nearform/docsify-theme-nearform#readme"
+  "homepage": "https://github.com/nearform/docsify-theme-nearform#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "postcss-cli": "^6.1.1"
+  }
 }
