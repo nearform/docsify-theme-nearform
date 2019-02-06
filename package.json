@@ -1,6 +1,6 @@
 {
   "name": "@nearform/docsify-theme-nearform",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A NearForm theme for docsify",
   "main": "theme-nearform.css",
   "scripts": {
