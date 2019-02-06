@@ -18,10 +18,10 @@
 
   --heading-color: var(--theme-blue);
   --heading-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --heading-font-weight: 300;
+  --heading-font-weight: 400;
   --heading-h1-font-size: 70px;
-  --heading-h1-font-weight: 100;
-  --heading-h2-font-size: 18px;
+  --heading-h2-font-size: 28px;
+  --heading-h2-margin: 3rem 0 0;
 
   --link-border-bottom: solid 1px var(--base-color);
   --link-border-bottom--hover: solid 1px var(--theme-orange);
@@ -59,16 +59,12 @@
   --sidebar-nav-link-padding: 0.65em;
   --sidebar-nav-pagelink-padding: 0.5em 2em;
   --sidebar-padding: 0;
-  --sidebar-toggle-background: rgb(255, 255, 255);
-  --sidebar-toggle-border-radius: 0 3px 3px 0;
 }
 
 .sidebar {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.sidebar-toggle .sidebar-toggle-button {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
+
 body.close .sidebar {
   box-shadow: none;
 }
