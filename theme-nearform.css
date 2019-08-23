@@ -1,87 +1,183 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:400,700,700i');
 
 :root {
-  --theme-hue: 219;
-  --theme-saturation: 79%;
-  --theme-lightness: 51%;
-  --theme-blue: rgb(25, 76, 172);
-  --theme-orange: rgb(253, 119, 94);
+  /* Theme colors */
+  --nearform-color-nearform-blue : #2165E3;
+  --nearform-color-midnight-blue : #194CAA;
+  --nearform-color-bubblegum     : #F6BAB8;
+  --nearform-color-brunch-pink   : #FB7A9C;
+  --nearform-color-supersplit    : #FB775E;
 
-  --base-background-color: rgb(244, 244, 242);
-  --base-color: rgb(109, 109, 104);
-  --base-line-height: 1.6;
-  --base-font-size: 16px;
-  --base-font-family: 'Didact', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --nearform-color-grey-1        : #F2F2F0;
+  --nearform-color-grey-2        : #D3D3CD;
+  --nearform-color-grey-3        : #A9AAA2;
+  --nearform-color-grey-4        : #5C6770;
+  --nearform-color-grey-5        : #272D3A;
 
-  --code-block-border-radius: 6px;
-  --code-theme-background: rgb(255, 255, 255);
+  --nearform-color-white         : #FFFFFF;
+  --nearform-color-black         : #000000;
 
-  --heading-color: var(--theme-blue);
-  --heading-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --heading-font-weight: 600;
-  --heading-h1-font-size: 40px;
-  --heading-h2-font-size: 26px;
-  --heading-h2-margin: 3rem 0 0;
+  /* Modular scale */
+  --modular-scale : 1.2;
 
-  --link-border-bottom: solid 1px var(--base-color);
-  --link-border-bottom--hover: solid 1px var(--theme-orange);
-  --link-text-decoration: none;
+  /* Borders */
+   --border-radius-s : 3px;
+   --border-radius-m : 5px;
+   --border-radius-l : 7px;
+
+  /* Base */
+  --base-background-color : var( --nearform-color-white);
+  --base-color            : var(--nearform-color-grey-4);
+  --base-font-family      : 'Didact', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --base-font-size        : 16px;
+  --base-letter-spacing   : 0;
+  --base-line-height      : 1.5;
+
+  --mark-background       : #ffecb3;
+
+  --selection-color       : #b4d5fe;
+
+  /* Content */
+  --content-max-width          : 44rem;
+
+  --heading-color              : var(--nearform-color-grey-5););
+  --heading-font-family        : 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --heading-font-weight        : 700;
+  --heading-margin             : 2rem 0 0;
+  --heading-padding            : 0;
+
+  --link-border-bottom         : solid 1px var(--nearform-color-nearform-blue);
+  --link-border-bottom--hover  : solid 1px var(--nearform-color-midnight-blue);
+  --link-color                 : var(--nearform-color-nearform-blue);
+  --link-color--hover          : var(--nearform-color-midnight-blue);
+  --link-text-decoration       : none;
   --link-text-decoration--hover: none;
 
-  --search-input-background-color: rgb(255,255,255);
-  --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20px' width='20px' viewBox='0 0 24 24' fill='none' stroke='rgba(0, 0, 0, 0.3)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5' vector-effect='non-scaling-stroke'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E");
-  --search-input-background-position: 21px center;
-  --search-input-border-color: var(--sidebar-border-color);
-  --search-input-border-width: 1px 0;
-  --search-input-margin: 0;
-  --search-input-padding: 0.65em 1em 0.65em 50px;
-  --search-input-placeholder-color: rgba(0, 0, 0, 0.4);
-  --search-margin: 0;
+  /* Sidebar */
+  --sidebar-background                      : var(--nearform-color-grey-1);
+  --sidebar-border-color                    : var(--nearform-color-grey-2);
+  --sidebar-border-width                    : 0 1px 0 0;
+  --sidebar-padding                         : 0;
 
-  --search-result-heading-color: rgb(255, 255, 255);
-  --search-result-heading-font-weight: 600;
-  --search-result-item-border-color: var(--theme-blue);
-  --search-result-item-padding: 1em;
-  --search-result-keyword-background: var(--base-background-color);
-  --search-result-keyword-color: var(--base-color);
+  --sidebar-name-margin                     : 0;
 
-  --sidebar-background: var(--theme-color);
-  --sidebar-border-color: var(--mono-tint2);
-  --sidebar-name-background: rgb(255, 255, 255);
-  --sidebar-name-margin: 0;
-  --sidebar-name-padding: 1em 0;
-  --sidebar-nav-indent: 0;
-  --sidebar-nav-link-background-color--active: var(--theme-blue);
-  --sidebar-nav-link-background-color--hover: var(--theme-blue);
+  --sidebar-nav-indent                      : 1rem;
+  --sidebar-nav-margin                      : 1rem 0;
+
+  --sidebar-nav-link-border-color           : transparent;
+  --sidebar-nav-link-border-color--active   : var(--nearform-color-nearform-blue);
+  --sidebar-nav-link-border-color--hover    : transparent;
+  --sidebar-nav-link-border-radius          : 0;
+  --sidebar-nav-link-border-style           : solid;
+  --sidebar-nav-link-border-style--active   : solid;
+  --sidebar-nav-link-border-style--hover    : solid;
+  --sidebar-nav-link-border-width           : 0;
+  --sidebar-nav-link-border-width--active   : 0 5px 0 0;
+  --sidebar-nav-link-border-width--hover    : 0;
+  --sidebar-nav-link-color                  : var(--nearform-color-grey-5);
+  --sidebar-nav-link-color--active          : var(--nearform-color-nearform-blue);
+  --sidebar-nav-link-color--hover           : var(--nearform-color-nearform-blue);
+  --sidebar-nav-link-font-weight            : normal;
+  --sidebar-nav-link-font-weight--active    : ;
+  --sidebar-nav-link-font-weight--hover     : ;
+  --sidebar-nav-link-margin                 : ;
+  --sidebar-nav-link-padding                : 0.5em 2em;
+  --sidebar-nav-link-text-decoration        : ;
   --sidebar-nav-link-text-decoration--active: none;
-  --sidebar-nav-link-text-decoration--hover: none;
-  --sidebar-nav-link-color: rgb(255, 255, 255);
-  --sidebar-nav-link-padding: 0.65em;
-  --sidebar-nav-pagelink-padding: 0.5em 2em;
-  --sidebar-padding: 0;
+  --sidebar-nav-link-text-decoration--hover : none;
+  --sidebar-nav-link-text-decoration-color  : ;
+  --sidebar-nav-link-transition             : ;
+
+  --sidebar-toggle-background               : var(--sidebar-background);
+  --sidebar-toggle-border-color             : var(--sidebar-border-color);
+  --sidebar-toggle-border-radius            : 100px;
+  --sidebar-toggle-border-style             : solid;
+  --sidebar-toggle-border-width             : 1px;
+  --sidebar-toggle-height                   : 44px;
+  --sidebar-toggle-icon-color               : var(--nearform-color-grey-2);
+  --sidebar-toggle-icon-height              : 14px;
+  --sidebar-toggle-icon-stroke-width        : 3px;
+  --sidebar-toggle-icon-width               : 20px;
+  --sidebar-toggle-offset-left              : calc( 0px - (var(--sidebar-toggle-width) / 2));
+  --sidebar-toggle-offset-top               : calc(43px - (var(--sidebar-toggle-height) / 2));
+  --sidebar-toggle-width                    : 44px;
+
+  /* Search */
+  --search-background                      : ;
+  --search-margin                          : 1rem;
+  --search-padding                         : ;
+
+  --search-clear-icon-color1               : var(--nearform-color-grey-2);
+  --search-clear-icon-color2               : var(--nearform-color-white);
+
+  /* --search-input-background-image       : url("data:image/svg+xml,%3Csvg height='20px' width='20px' viewBox='0 0 24 24' fill='none' stroke='rgba(0, 0, 0, 0.3)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5' vector-effect='non-scaling-stroke'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E"); */
+  --search-input-background-color          : var(--nearform-color-white);
+  --search-input-background-color--focus   : ;
+  --search-input-background-image          : ;
+  --search-input-background-image--focus   : ;
+  /* --search-input-background-position    : 21px center; */
+  --search-input-background-position       : ;
+  --search-input-background-position--focus: ;
+  --search-input-background-repeat         : no-repeat;
+  --search-input-background-size           : ;
+  --search-input-background-size--focus    : ;
+  --search-input-border-color              : var(--nearform-color-grey-3);
+  --search-input-border-radius             : var(--border-radius-m);
+  --search-input-border-width              : 2px;
+  --search-input-color                     : var(--base-color);
+  --search-input-font-size                 : ;
+  --search-input-margin                    : ;
+  --search-input-padding                   : 0.75rem 0.5rem;
+  --search-input-placeholder-color         : var(--nearform-color-grey-3);
+  --search-input-transition                : ;
+
+  --search-flex-order                      : 1;
+
+  --search-result-heading-color            : var(--heading-color);
+  --search-result-heading-font-size        : var(--small-font-size);
+  --search-result-heading-font-weight      : normal;
+  --search-result-heading-margin           : 0 0 0.25em;
+  --search-result-item-border-color        : var(--sidebar-border-color);
+  --search-result-item-border-style        : solid;
+  --search-result-item-border-width        : 0 0 1px 0;
+  --search-result-item-color               : ;
+  --search-result-item-font-size           : var(--small-font-size);
+  --search-result-item-font-weight         : normal;
+  --search-result-item-margin              : ;
+  --search-result-item-padding             : 1em 0;
+  --search-result-keyword-background       : var(--selection-color);
+  --search-result-keyword-border-radius    : var(--border-radius-s);
+  --search-result-keyword-color            : var(--base-color);
+  --search-result-keyword-font-weight      : normal;
+  --search-result-keyword-margin           : 0;
+  --search-result-keyword-padding          : 0.2em 0;
 }
 
-@media only screen and (min-width: 508px) {
-  :root {
-    --heading-h1-font-size: 70px;
-    --heading-h2-font-size: 30px;
+@media only screen and (min-width: 768px) {
+  body.close {
+    --sidebar-toggle-offset-left : 1rem;
   }
 }
 
-.sidebar {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+@media only screen and (min-width: 992px) {
+  :root {
+    --modular-scale : 1.3;
+    --base-font-size: 18px;
+  }
 }
 
-body.close .sidebar {
-  box-shadow: none;
+@media only screen and (min-width: 1280px) {
+  :root {
+    --modular-scale : 1.4;
+    --base-font-size: 20px;
+  }
 }
 
-.sidebar .search .matching-post {
-  color: rgb(255, 255, 255);
-}
-.sidebar .search .results-panel .empty {
-  color: rgb(255, 255, 255);
-}
-.app-sub-sidebar > li > a {
-  padding: 0.4em 1em 0.4em 3em !important;
+@media only screen and (max-width: 767px) {
+  :root {
+    --sidebar-toggle-offset-top: 0;
+    --sidebar-toggle-offset-left: 0;
+    --sidebar-toggle-border-radius: 0;
+    --sidebar-toggle-border-width: 0;
+  }
 }
