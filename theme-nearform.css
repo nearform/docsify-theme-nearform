@@ -40,7 +40,7 @@
   /* Content */
   --content-max-width          : 44rem;
 
-  --heading-color              : var(--nearform-color-grey-5););
+  --heading-color              : var(--nearform-color-grey-5);
   --heading-font-family        : 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --heading-font-weight        : 700;
   --heading-margin             : 2rem 0 0;
